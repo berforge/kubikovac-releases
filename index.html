@@ -73,6 +73,13 @@
   .cenkarta li{padding:4px 0;display:flex;gap:8px}
   .cenkarta li .ic{color:var(--zelena2);margin-top:.15em}
   .bonus{text-align:center;color:var(--seda);margin-top:18px}
+  /* galéria ukážok */
+  .galeria{display:grid;gap:22px;max-width:900px;margin:0 auto}
+  .galeria figure{margin:0}
+  .galeria img{width:100%;border-radius:12px;border:1px solid var(--ciara);box-shadow:var(--tien);display:block;background:#fff}
+  .galeria figcaption{text-align:center;color:var(--seda);font-size:.92rem;margin-top:10px}
+  /* riešenia na mieru */
+  .namieru{text-align:center}
   /* pätka */
   footer{background:var(--zelena);color:#fff;padding:30px 0;margin-top:20px}
   footer .obal{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:center;font-size:.9rem;opacity:.92}
@@ -141,6 +148,21 @@
   </div>
 </section>
 
+<section class="obal">
+  <h2>Ukážky z programu</h2>
+  <p class="podnadpis">Od zadávania kusov v teréne po hotový úradný doklad.</p>
+  <div class="galeria">
+    <figure>
+      <img src="obrazky/la43.png" alt="Doklad o pôvode dreva LA 43 vytlačený z programu">
+      <figcaption>Úradný doklad LA 43 (Doklad o pôvode dreva) — pripravený na tlač</figcaption>
+    </figure>
+    <figure>
+      <img src="obrazky/odpocet.png" alt="Odpočet odrezanej hniloby v tabuľke">
+      <figcaption>Odpočet odrezku/hniloby — program ukáže hrubý aj čistý objem</figcaption>
+    </figure>
+  </div>
+</section>
+
 <div class="pruh"><section class="obal" id="stiahnut">
   <h2>Stiahnutie</h2>
   <p class="podnadpis">Vyberte verziu pre svoj systém. Po inštalácii dostanete kód zariadenia — pošlite nám ho a vydáme vám licenciu.</p>
@@ -191,6 +213,13 @@
     <a class="cta" href="mailto:agroberit@gmail.com?subject=Objedn%C3%A1vka%20Kubikova%C4%8D&body=Dobr%C3%BD%20de%C5%88%2C%20m%C3%A1m%20z%C3%A1ujem%20o%20program%20Kubikova%C4%8D.%0A%0AMeno%2Ffirma%3A%0ASyst%C3%A9m%20(Windows%2FAndroid%2FLinux)%3A%0A">Objednať e-mailom</a>
   </div>
 </section></div>
+
+<section class="obal namieru">
+  <h2>Riešenia na mieru</h2>
+  <p class="podnadpis">Potrebujete niečo navyše? Program prispôsobíme podľa vašich potrieb — vlastné tlačové zostavy,
+    úprava cenníka, prepojenie s vašou evidenciou či ďalšie funkcie. Napíšte nám, čo potrebujete, a pripravíme riešenie.</p>
+  <a class="cta" href="mailto:agroberit@gmail.com?subject=Rie%C5%A1enie%20na%20mieru%20%E2%80%93%20Kubikova%C4%8D&body=Dobr%C3%BD%20de%C5%88%2C%20m%C3%A1m%20z%C3%A1ujem%20o%20rie%C5%A1enie%20na%20mieru.%20Pop%C3%AD%C5%A1em%20po%C5%BEiadavku%3A%0A%0A">Napíšte nám požiadavku</a>
+</section>
 
 <footer><div class="obal">
   <span><strong>AGROBERIT s. r. o.</strong> · IČO 57 163 171</span>
