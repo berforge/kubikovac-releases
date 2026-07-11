@@ -48,6 +48,8 @@
   .karta .znak .ic{width:22px;height:22px}
   .karta h3{margin:0 0 6px;font-size:1.1rem}
   .karta p{margin:0;color:var(--seda);font-size:.95rem}
+  .karta.zvyraz{border-color:var(--zelena2);box-shadow:0 0 0 1px var(--zelena2),var(--tien)}
+  .karta.zvyraz .znak{background:var(--zelena2)}
   /* platformy / stiahnutie */
   .pruh{background:var(--papier);border-top:1px solid var(--ciara);border-bottom:1px solid var(--ciara)}
   .stiahni{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:6px}
@@ -136,8 +138,23 @@
       <h3>Úradný doklad LA 43</h3>
       <p>Doklad o pôvode dreva na jeden klik — na šírku aj na výšku, vytlačíte alebo uložíte do PDF.</p>
     </div>
-    <div class="karta">
+    <div class="karta zvyraz">
+      <span class="znak"><svg class="ic"><use href="#i-vyber"/></svg></span>
+      <h3>Rýchly doklad pre naloženú drevinu</h3>
+      <p>Pri nakladaní na odvoz jednoducho zaškrtnete, ktoré kusy sa naložili — a LA 43 sa vytvorí len pre ne. Za pár sekúnd.</p>
+    </div>
+    <div class="karta zvyraz">
+      <span class="znak"><svg class="ic"><use href="#i-doklady"/></svg></span>
+      <h3>Samostatný doklad pre každú drevinu</h3>
+      <p>Máte všetko v jednom zozname? Program automaticky rozdelí dreviny a vytvorí samostatný LA 43 pre každú z nich.</p>
+    </div>
+    <div class="karta zvyraz">
       <span class="znak"><svg class="ic"><use href="#i-skratit"/></svg></span>
+      <h3>Skrátenie dĺžok o ľubovoľnú hodnotu</h3>
+      <p>Zadáte, o koľko metrov skrátiť namerané dĺžky, a objem sa hneď prepočíta — s náhľadom pred a po.</p>
+    </div>
+    <div class="karta">
+      <span class="znak"><svg class="ic"><use href="#i-minus"/></svg></span>
       <h3>Odpočty hniloby a odrezkov</h3>
       <p>Zadáte chybnú časť kusa a program ukáže hrubý aj čistý objem po odpočte — všetko zdokladované.</p>
     </div>
@@ -158,13 +175,18 @@
     </div>
     <div class="karta">
       <span class="znak"><svg class="ic"><use href="#i-sort"/></svg></span>
-      <h3>Triedenie na viac úrovní</h3>
-      <p>Zoradíte kusy podľa dreviny, dĺžky, priemeru či objemu — aj kombinovane, jedným ťuknutím.</p>
+      <h3>Triedenie a výber na viac úrovní</h3>
+      <p>Zoradíte kusy podľa dreviny, dĺžky, priemeru či objemu — aj kombinovane. Označené kusy použijete na doklad či prepočet.</p>
+    </div>
+    <div class="karta zvyraz">
+      <span class="znak"><svg class="ic"><use href="#i-spoj"/></svg></span>
+      <h3>Spojenie viacerých dokladov</h3>
+      <p>Načítané uložené súbory pridáte do aktuálneho dokladu — z viacerých zoznamov spravíte jeden.</p>
     </div>
     <div class="karta">
       <span class="znak"><svg class="ic"><use href="#i-zalozky"/></svg></span>
-      <h3>Viac dokladov naraz</h3>
-      <p>Otvorené doklady v záložkách, archív s vyhľadávaním a uložením — nič sa nestratí.</p>
+      <h3>Viac dokladov naraz a archív</h3>
+      <p>Otvorené doklady v záložkách, archív s uložením a vyhľadávaním — nič sa nestratí.</p>
     </div>
     <div class="karta">
       <span class="znak"><svg class="ic"><use href="#i-tema"/></svg></span>
@@ -172,14 +194,9 @@
       <p>Prehľadné aj na ostrom slnku alebo pre slabší zrak — jedným tlačidlom zväčšíte celé ovládanie.</p>
     </div>
     <div class="karta">
-      <span class="znak"><svg class="ic"><use href="#i-offline"/></svg></span>
-      <h3>Funguje offline, dáta ostávajú u vás</h3>
-      <p>Bez internetu, bez cloudu — všetko počíta priamo vo vašom zariadení. Aktualizácie zdarma.</p>
-    </div>
-    <div class="karta">
       <span class="znak"><svg class="ic"><use href="#i-zar"/></svg></span>
-      <h3>Windows · Android · Linux</h3>
-      <p>Ten istý program na počítači aj v mobile. Doklady jednoducho prenesiete medzi zariadeniami.</p>
+      <h3>Windows · Android · Linux — aj offline</h3>
+      <p>Ten istý program na počítači aj v mobile, funguje bez internetu. Doklady prenesiete medzi zariadeniami. Aktualizácie zdarma.</p>
     </div>
   </div>
 </section>
@@ -286,6 +303,10 @@
   <symbol id="i-zalozky" viewBox="0 0 24 24"><path d="M4 8h5l2-2h9v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z"/><path d="M4 11h16"/></symbol>
   <symbol id="i-tema" viewBox="0 0 24 24"><path d="M20 13.5A8 8 0 1 1 10.5 4a6.3 6.3 0 0 0 9.5 9.5z"/></symbol>
   <symbol id="i-offline" viewBox="0 0 24 24"><path d="M12 3l7 2.5v5.2c0 4.3-3 7.6-7 9.3-4-1.7-7-5-7-9.3V5.5z"/><path d="M9.3 12l1.9 1.9L15 10"/></symbol>
+  <symbol id="i-vyber" viewBox="0 0 24 24"><rect x="3" y="4" width="6.5" height="6.5" rx="1.4"/><path d="M4.6 7.2 6 8.6 8 6"/><rect x="3" y="13.5" width="6.5" height="6.5" rx="1.4"/><path d="M12.5 7h8.5M12.5 16.7h8.5"/></symbol>
+  <symbol id="i-doklady" viewBox="0 0 24 24"><path d="M8 3h6l4 4v10a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v4h4"/><path d="M4 7v13a1 1 0 0 0 1 1h9" opacity=".55"/></symbol>
+  <symbol id="i-minus" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M8 12h8"/></symbol>
+  <symbol id="i-spoj" viewBox="0 0 24 24"><path d="M4 5v4a3 3 0 0 0 3 3h9"/><path d="M4 19v-4a3 3 0 0 1 3-3"/><path d="M13 8l4 4-4 4"/></symbol>
   <symbol id="i-win" viewBox="0 0 24 24"><path d="M3 5.5 10.5 4v7.5H3z M11.5 3.8 21 2.5V11.5h-9.5z M3 12.5h7.5V20L3 18.5z M11.5 12.5H21V21.5l-9.5-1.3z" fill="currentColor" stroke="none"/></symbol>
   <symbol id="i-and" viewBox="0 0 24 24"><path d="M5 10a1 1 0 0 1 2 0v6a1 1 0 0 1-2 0z M17 10a1 1 0 0 1 2 0v6a1 1 0 0 1-2 0z M7 9h10v9a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1z M9 19v2a1 1 0 0 0 2 0v-2 M13 19v2a1 1 0 0 0 2 0v-2 M8 8a4 4 0 0 1 8 0"/><path d="M9 5.5 8 4M15 5.5 16 4"/></symbol>
   <symbol id="i-lin" viewBox="0 0 24 24"><path d="M9 4a3 3 0 0 1 6 0c0 3 2 5 2 8s-2 6-5 6-5-3-5-6 2-5 2-8z"/><path d="M9.5 9h.01M14.5 9h.01"/></symbol>
