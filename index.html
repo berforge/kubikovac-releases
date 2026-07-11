@@ -36,7 +36,10 @@
   .cena-hint{margin-top:16px;font-size:.95rem;opacity:.85}
   /* náhľad */
   .nahlad{margin:-40px auto 0;max-width:960px;padding:0 20px}
-  .nahlad img{width:100%;border-radius:14px;border:1px solid var(--ciara);box-shadow:var(--tien);display:block}
+  .nahlad>img{width:100%;border-radius:14px;border:1px solid var(--ciara);box-shadow:var(--tien);display:block}
+  .p1okno{margin:16px auto 0;max-width:680px}
+  .p1okno img{width:100%;border-radius:10px;border:1px solid var(--ciara);box-shadow:var(--tien);display:block;background:#fff}
+  .p1okno figcaption{text-align:center;color:var(--seda);font-size:.9rem;margin-top:8px}
   section{padding:52px 0}
   h2{font-size:1.7rem;text-align:center;margin:0 0 8px;text-wrap:balance}
   .podnadpis{text-align:center;color:var(--seda);max-width:52ch;margin:0 auto 34px}
@@ -117,7 +120,12 @@
   </div>
 </header>
 
-<div class="nahlad"><img src="obrazky/desktop.png" alt="Ukážka programu Kubikovač guľatiny"></div>
+<div class="nahlad"><img src="obrazky/desktop.png" alt="Ukážka programu Kubikovač guľatiny s dolnou lištou súhrnu">
+  <figure class="p1okno">
+    <img src="obrazky/sumar_1p.png" alt="Súhrn so zapnutým odpočtom prídavku 1 %">
+    <figcaption>Voliteľný odpočet prídavku na dĺžku 1 %: program vás upozorní a objemy počíta z krátenej dĺžky.</figcaption>
+  </figure>
+</div>
 
 <section class="obal">
   <h2>Všetko na kubíkovanie na jednom mieste</h2>
